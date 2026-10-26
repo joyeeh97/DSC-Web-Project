@@ -15,7 +15,6 @@
     <h1>앵커 태그 2단계: 다양한 링크 만들기</h1>
 
     <!--①. 새 창 링크 + 보안 속성 rel~~-->
-    <!--"target=_blank"를 적용할 때 rel="noopener noreferrer"-->
     <h2>&#9312; 새 창 / 현재 창 링크</h2>
     <p>
         <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">구글(새 창)</a>
@@ -23,10 +22,9 @@
     </p>
 
     <!--②. 메일 보내기: 제목(subject)과 본문(body)까지 미리 채우기-->
-    <!--띄어쓰기는 %20, 여러 값은 &로 연결-->
     <h2>&#9313; 메일 보내기: 제목(subject)과 본문(body)까지 미리 채우기</h2>
     <p>
-        <a href="mailto: joyeeh97@gmail.com?subject=수강%20문의&body=안녕하세요,%30수강문의드립니다." target="_blank" title="📩담당자 메일 보내기">📩수강 문의 메일 보내기</a>
+        <a href="mailto:joyeeh97@gmail.com?subject=수강%20문의&body=안녕하세요,%20수강문의드립니다." target="_blank" title="📩담당자 메일 보내기">📩수강 문의 메일 보내기</a>
     </p>
 
     <!--③. 전화 걸기: 스마트폰에서 누르면 전화 앱이 열림-->
@@ -38,7 +36,7 @@
     <!--④. 같은 폴더의 다른 HTML 파일로 이동(상대경로)-->
     <h2>&#9315; 내 사이트의 다른 페이지로 이동</h2>
     <p>
-        <a href="/html/test09-3.html" title="📰9-3 뉴스 페이지로 이동" target="_blank">📰9단계 뉴스칼럼 페이지 이동</a>
+        <a href="test09-3.html" title="📰9-3 뉴스 페이지로 이동" target="_blank">📰9단계 뉴스칼럼 페이지 이동</a>
     </p>
 
     <!--⑤. 이미지 링크 걸기: a태그 안에 img 넣기-->
@@ -46,14 +44,16 @@
     <p>
         <a href="https://www.naver.com" target="_blank" rel="noopener noreferrer" title="🚗네이버로 이동하기"><img src="https://placehold.co/300x100?text=NAVER" alt="네이버 이동"/></a>
 
-        <a href="https://www.naver.com" target="_blank" rel="noopener noreferrer" title="🚗네이버로 이동하기"><img src="/image/naver-logo.png" alt="네이버 이동"/>
+        <!-- 경로 수정: ../image/naver-logo.png -->
+        <a href="https://www.naver.com" target="_blank" rel="noopener noreferrer" title="🚗네이버로 이동하기"><img src="../image/naver-logo.png" alt="네이버 이동"/></a>
     </p>
 
     <!--⑥. 파일 다운로드: download 속성(같은 사이트의 파일에서 동작)-->
     <h2>&#9317; 파일 다운로드</h2>
     <p>
-        <a href="/img/naver-logo.png" download="실습이미지.jpg">⏬실습 이미지 다운로드 받기</a>
-        <a href="/html/test01.html" download="실습파일.html">⏬실습 HTML 파일 다운로드 받기</a>
+        <!-- 폴더명 및 상대 경로 수정 -->
+        <a href="../image/naver-logo.png" download="실습이미지.png">⏬실습 이미지 다운로드 받기</a>
+        <a href="test01.html" download="실습파일.html">⏬실습 HTML 파일 다운로드 받기</a>
     </p>
 
     <!--스크롤 공간 확보-->
